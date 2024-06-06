@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Assets for website 1 -->
+    <record id="website_test.test" model="ir.asset">
+        <field name="name">wesbite test</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">website_test/static/src/test.js</field>
+        <field name="website_id" ref="website.default_website" />
+    </record>
+
+    <!-- Assets for website 2 -->
+    <record id="website_test.test2" model="ir.asset">
+        <field name="name">wesbite test 2</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">website_test/static/src/test2.js</field>
+        <field name="website_id" ref="website_test.second_website"/>
+    </record>
+
+</odoo>
